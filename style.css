@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Space+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #333333;
+}
+
+body {
+  margin: 0px;
+  background-color: white;
+  font-family: "Space Mono", monospace;
+}
+
+header {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 40px 0px 0px 77px;
+}
+
+.main {
+  margin-top: 150px;
+  margin-left: 77px;
+  display: flex;
+}
+
+.img-hero {
+  height: 414.25px;
+  width: 539.22px;
+}
+
+.main .details-container {
+  margin-left: 118.78px;
+  margin-right: 119px;
+}
+
+.details-container .details-heading {
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 36px;
+}
+
+.details-container .details-text {
+  font-weight: 400;
+  font-size: 24px;
+  margin-right: 204px;
+}
+
+.btn-primary {
+  color: white;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  padding: 24px 43px;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 20px 0px 0px 24px;
+  }
+
+  .main {
+    margin-left: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-hero {
+    width: 288.83px;
+    height: 220.35px;
+  }
+  .main .details-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    align-self: start;
+    justify-self: flex-start;
+  }
+  .details-container .details-heading {
+    font-size: 48px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+
+  .details-container .details-text {
+    font-size: 18px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
